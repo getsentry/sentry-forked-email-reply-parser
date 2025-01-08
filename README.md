@@ -1,3 +1,25 @@
+sentry-forked-email-reply-parser
+================================
+
+### new release
+
+make a new branch for the fork of the upstream tag:
+
+```bash
+git remote add upstream git@github.com:zapier/email-reply-parser
+git fetch upstream --tags
+git push origin --tags
+git checkout 1.2.3 -b sentry-1.2.3
+```
+
+- cherry-pick the craft / release commit(s) into your branch (from a previous `sentry-...` release or from `master`)
+- cherry-pick relevant commit(s) from previous releases
+
+releases are done through craft in the release.yml workflow -- make sure to
+target your particular branch with a `-#` release postfix (like `1.2.3-1`)
+
+___
+
 # Email Reply Parser for Python
 A port of GitHub's Email Reply Parser library, by the fine folks at [Zapier](https://zapier.com/).
 

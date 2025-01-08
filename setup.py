@@ -12,7 +12,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'email_reply_parser')
 import version
 
 setup(
-    name='email_reply_parser',
+    name='sentry_forked_email_reply_parser',
     version=version.VERSION,
     description='Email reply parser',
     packages=['email_reply_parser'],
